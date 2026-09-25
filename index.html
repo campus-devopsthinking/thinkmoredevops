@@ -32,3 +32,195 @@ section{padding:72px 0}
 .btn-main:hover{transform:translateY(-2px);box-shadow:0 14px 28px -10px var(--pink)}
 .btn-alt{background:var(--yellow);color:var(--ink)}
 .btn-alt:hover{transform:translateY(-2px)}
+
+/* hero */
+.hero{padding:56px 0 76px;position:relative;overflow:hidden;
+  background:
+   radial-gradient(circle at 8% 12%,rgba(255,201,60,.55),transparent 38%),
+   radial-gradient(circle at 92% 8%,rgba(255,79,139,.35),transparent 40%),
+   radial-gradient(circle at 80% 95%,rgba(34,166,242,.35),transparent 42%),
+   radial-gradient(circle at 5% 90%,rgba(0,184,169,.3),transparent 38%),
+   var(--paper)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;position:relative}
+.badge{display:inline-block;background:linear-gradient(90deg,var(--orange),var(--pink));color:#fff;font-size:.9rem;font-weight:600;padding:8px 16px;border-radius:999px;margin-bottom:22px}
+h1{font-size:clamp(2.3rem,6vw,3.9rem);font-weight:800;background:linear-gradient(100deg,var(--violet),var(--pink) 60%,var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 span{display:block;font-size:.4em;font-weight:600;color:var(--ink);-webkit-text-fill-color:var(--ink);letter-spacing:0;margin-top:14px}
+.hero p.lead{margin:22px 0 30px;font-size:1.12rem;color:var(--ink);opacity:.8}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.chips span{padding:6px 14px;border-radius:999px;font-weight:600;font-size:.9rem;color:#fff}
+.chips span:nth-child(1){background:var(--teal)}
+.chips span:nth-child(2){background:var(--sky)}
+.chips span:nth-child(3){background:var(--violet)}
+.chips span:nth-child(4){background:var(--pink)}
+
+/* pipeline card */
+.pipe{background:var(--ink);color:#EDE9FF;border-radius:20px;padding:22px 22px 16px;box-shadow:0 26px 50px -20px rgba(108,60,240,.65);border:3px solid transparent;background-clip:padding-box;position:relative}
+.pipe::before{content:"";position:absolute;inset:-3px;border-radius:23px;background:linear-gradient(135deg,var(--yellow),var(--pink),var(--violet),var(--teal));z-index:-1}
+.pipe-top{display:flex;justify-content:space-between;font-size:.85rem;color:#A9A2D6;margin-bottom:14px;font-weight:500}
+.pipe-top i{font-style:normal;color:var(--green);font-weight:600}
+.stage{display:flex;align-items:center;gap:12px;padding:10px 0;border-top:1px solid rgba(255,255,255,.1);font-weight:600}
+.stage:first-of-type{border-top:0}
+.dot{width:24px;height:24px;border-radius:50%;border:2px solid #4B4485;flex:none;display:grid;place-items:center;font-size:.75rem;color:transparent;animation:pass .4s forwards}
+.stage small{margin-left:auto;color:#8F88C0;font-weight:400}
+@keyframes pass{to{background:var(--c);border-color:var(--c);color:#fff}}
+.stage:nth-of-type(1){--c:var(--yellow)}.stage:nth-of-type(2){--c:var(--orange)}.stage:nth-of-type(3){--c:var(--pink)}.stage:nth-of-type(4){--c:var(--sky)}.stage:nth-of-type(5){--c:var(--green)}
+.stage:nth-of-type(1) .dot{animation-delay:.4s}.stage:nth-of-type(2) .dot{animation-delay:.9s}.stage:nth-of-type(3) .dot{animation-delay:1.4s}.stage:nth-of-type(4) .dot{animation-delay:1.9s}.stage:nth-of-type(5) .dot{animation-delay:2.4s}
+.pipe-foot{margin-top:10px;padding-top:12px;border-top:1px solid rgba(255,255,255,.1);font-size:.85rem;color:#A9A2D6}
+
+/* challenges */
+.challenges{background:#fff}
+.ch-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:16px;margin-top:34px}
+.ch{border-radius:16px;padding:22px;background:color-mix(in srgb,var(--c) 12%,white);border:2px solid color-mix(in srgb,var(--c) 45%,white);border-left:8px solid var(--c)}
+.ch h3{font-size:1.15rem;margin-bottom:6px}
+.ch p{color:var(--muted);font-size:.97rem}
+.ch h3::before{content:"🔴 ";font-size:.75em}
+.ch:nth-child(1){--c:var(--red)}.ch:nth-child(2){--c:var(--orange)}.ch:nth-child(3){--c:var(--pink)}.ch:nth-child(4){--c:var(--violet)}.ch:nth-child(5){--c:var(--sky)}
+
+/* bridge */
+.bridge{background:linear-gradient(110deg,var(--violet),var(--pink) 55%,var(--orange));color:#fff;text-align:center;padding:68px 0}
+.bridge h2{max-width:20ch;margin:0 auto 10px}
+.bridge p{color:#FFF1F6;max-width:52ch;margin:0 auto}
+
+/* learn */
+.learn-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:34px}
+.tool{background:var(--card);border-radius:16px;padding:14px 16px;font-weight:600;display:flex;align-items:center;gap:12px;border:2px solid color-mix(in srgb,var(--c) 40%,white);transition:transform .15s,background .15s}
+.tool:hover{transform:translateY(-3px);background:color-mix(in srgb,var(--c) 12%,white)}
+.tool em{font-style:normal;font-size:1.4rem;width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:var(--c);flex:none}
+.tool:nth-child(1){--c:var(--yellow)}.tool:nth-child(2){--c:var(--green)}.tool:nth-child(3){--c:var(--red)}.tool:nth-child(4){--c:var(--pink)}.tool:nth-child(5){--c:var(--sky)}.tool:nth-child(6){--c:var(--orange)}.tool:nth-child(7){--c:var(--violet)}.tool:nth-child(8){--c:var(--teal)}.tool:nth-child(9){--c:var(--pink)}
+
+/* details */
+.details{background:linear-gradient(160deg,#2A1670,var(--ink));color:#fff}
+.details h2{color:#fff}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:32px}
+.fact{border-radius:16px;padding:20px;background:var(--c);color:var(--ink)}
+.fact .ic{font-size:1.6rem}
+.fact dt{font-size:.9rem;margin-top:6px;font-weight:500}
+.fact dd{font-family:var(--head);font-size:1.4rem;font-weight:800}
+.fact:nth-child(1){--c:var(--sky)}.fact:nth-child(2){--c:var(--green)}.fact:nth-child(3){--c:var(--pink)}.fact:nth-child(4){--c:var(--teal)}.fact:nth-child(5){--c:var(--yellow)}
+.audience{margin-top:26px;padding:16px 20px;border-radius:14px;background:rgba(255,255,255,.1);display:flex;gap:12px;align-items:center}
+
+/* closing */
+.close{text-align:center;background:
+  radial-gradient(circle at 10% 20%,rgba(255,201,60,.4),transparent 40%),
+  radial-gradient(circle at 90% 80%,rgba(0,184,169,.3),transparent 40%),var(--paper)}
+.flow{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 10px;margin:26px 0 34px;font-family:var(--head);font-weight:700;font-size:clamp(1.1rem,3vw,1.5rem)}
+.flow span{border-radius:999px;padding:7px 20px;color:#fff;background:var(--c)}
+.flow span:nth-of-type(1){--c:var(--orange)}.flow span:nth-of-type(2){--c:var(--pink)}.flow span:nth-of-type(3){--c:var(--violet)}.flow span:nth-of-type(4){--c:var(--sky)}.flow span:nth-of-type(5){--c:var(--green)}
+.flow b{color:var(--ink)}
+.close .cta-row{justify-content:center}
+.phone{margin-top:20px;font-size:1.15rem}
+.phone a{font-weight:700;color:var(--violet)}
+footer{padding:26px 0 90px;text-align:center;color:var(--muted);font-size:.9rem;background:#fff}
+
+.sticky{display:none}
+@media(max-width:820px){
+  .hero-grid{grid-template-columns:1fr}
+  section{padding:56px 0}
+  .sticky{display:flex;position:fixed;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(255,249,241,.96);border-top:1px solid #EADFCB;z-index:9}
+  .sticky .btn{width:100%;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01s!important;animation-delay:0s!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="badge">Batch 1 &nbsp;|&nbsp; Starts Oct 1, 2026</div>
+      <h1>DevOps Essentials for Beginners
+        <span>For all Engineering Students &amp; Freshers</span>
+      </h1>
+      <p class="lead">Stop memorising theory. In 35 days, learn Linux, Git, Jenkins, Ansible and CI/CD by building and deploying real applications yourself.</p>
+      <div class="cta-row">
+        <a class="btn btn-main" href="tel:+918096239849">📞 Call 8096239849</a>
+        <a class="btn btn-alt" href="#learn">See what you'll learn</a>
+      </div>
+      <div class="chips"><span>35 Days</span><span>Online</span><span>8 PM – 9 PM</span><span>₹2,000</span></div>
+    </div>
+
+    <aside class="pipe" aria-label="Your learning pipeline">
+      <div class="pipe-top"><span>learning-pipeline #1</span><i>● running</i></div>
+      <div class="stage"><span class="dot">✓</span>Learn <small>concepts</small></div>
+      <div class="stage"><span class="dot">✓</span>Practice <small>hands-on labs</small></div>
+      <div class="stage"><span class="dot">✓</span>Build <small>real setups</small></div>
+      <div class="stage"><span class="dot">✓</span>Deploy <small>applications</small></div>
+      <div class="stage"><span class="dot">✓</span>Grow <small>career</small></div>
+      <div class="pipe-foot">35 days · 8 PM – 9 PM · Online</div>
+    </aside>
+  </div>
+</header>
+
+<section class="challenges">
+  <div class="wrap">
+    <h2>Are you facing these challenges?</h2>
+    <p class="lead">Most freshers get stuck at the same five places.</p>
+    <div class="ch-grid">
+      <div class="ch"><h3>Theory → Practical Gap</h3><p>You know the concepts, but struggle to apply them practically.</p></div>
+      <div class="ch"><h3>Projects Without Strong Fundamentals</h3><p>Working on projects without understanding the technologies and architecture.</p></div>
+      <div class="ch"><h3>Interview Knowledge Gap</h3><p>Finding it difficult to answer practical and technical interview questions.</p></div>
+      <div class="ch"><h3>Corporate Training Challenges</h3><p>Struggling to understand technologies and concepts during initial job training.</p></div>
+      <div class="ch"><h3>Project &amp; KT Challenges</h3><p>Finding it difficult to understand projects, technologies and KT sessions.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="bridge">
+  <div class="wrap">
+    <h2>🌉 We help you bridge the gap</h2>
+    <p>Through Learning by Doing. Every topic is taught with live practice, so you leave with skills you can explain and demonstrate.</p>
+  </div>
+</div>
+
+<section id="learn">
+  <div class="wrap">
+    <h2>📚 What you'll learn</h2>
+    <p class="lead">Nine core topics, taught in the order real teams use them.</p>
+    <div class="learn-grid">
+      <div class="tool"><em>🐧</em>Linux Fundamentals</div>
+      <div class="tool"><em>🌿</em>Git &amp; GitHub</div>
+      <div class="tool"><em>🛠️</em>Jenkins</div>
+      <div class="tool"><em>⚙️</em>Ansible</div>
+      <div class="tool"><em>🌐</em>Apache</div>
+      <div class="tool"><em>🖥️</em>JBoss / WildFly</div>
+      <div class="tool"><em>🏗️</em>Application Architecture</div>
+      <div class="tool"><em>🔁</em>CI/CD</div>
+      <div class="tool"><em>🚀</em>Basic Application Deployment</div>
+    </div>
+  </div>
+</section>
+
+<section class="details">
+  <div class="wrap">
+    <h2>🎯 Course details</h2>
+    <dl class="facts">
+      <div class="fact"><div class="ic">📅</div><dt>Duration</dt><dd>35 Days | Batch 1</dd></div>
+      <div class="fact"><div class="ic">📆</div><dt>Starts</dt><dd>Oct 1, 2026</dd></div>
+      <div class="fact"><div class="ic">⏰</div><dt>Timing</dt><dd>8 PM – 9 PM</dd></div>
+      <div class="fact"><div class="ic">💻</div><dt>Mode</dt><dd>Online Training</dd></div>
+      <div class="fact"><div class="ic">💰</div><dt>Fee</dt><dd>₹2,000</dd></div>
+    </dl>
+    <div class="audience">👨‍🎓 <span>Built for Engineering Students &amp; Freshers. No prior DevOps experience needed.</span></div>
+  </div>
+</section>
+
+<section class="close">
+  <div class="wrap">
+    <h2>🚀 Learn by Doing</h2>
+    <div class="flow"><span>Learn</span><b>→</b><span>Practice</span><b>→</b><span>Build</span><b>→</b><span>Deploy</span><b>→</b><span>Grow</span></div>
+    <div class="cta-row">
+      <a class="btn btn-main" href="tel:+918096239849">📞 Call 8096239849</a>
+    </div>
+    <p class="phone">📲 Message / WhatsApp: <a href="tel:+918096239849">8096239849</a></p>
+  </div>
+</section>
+
+<footer><div class="wrap">DevOps Essentials for Beginners · Batch 1 · Online</div></footer>
+
+<div class="sticky"><a class="btn btn-main" href="tel:+918096239849">📞 Call 8096239849 · ₹2,000</a></div>
+
+</body>
+</html>
