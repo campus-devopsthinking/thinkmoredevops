@@ -1,305 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Think More DevOps | DevOps Essentials for Beginners</title>
+    <title>DevOps Essentials for Beginners | Campus to Corporate</title>
 
     <meta name="description"
-          content="DevOps Essentials for Engineering Students and Freshers. Learn Linux, Git, Jenkins, Ansible, Apache, JBoss, CI/CD and application deployment by doing.">
+          content="35-day online DevOps course for Engineering Students and Freshers. Learn Linux, Git, Jenkins, Ansible, Apache, JBoss/WildFly, Application Architecture, CI/CD and deployment. Fee ₹2,000.">
+
+    <meta name="theme-color" content="#6C3CF0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap"
           rel="stylesheet">
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- BACKGROUND -->
-<div class="background-grid"></div>
-<div class="glow glow-one"></div>
-<div class="glow glow-two"></div>
+<!-- ================= HEADER ================= -->
 
-<!-- HEADER -->
 <header class="header">
 
-    <div class="container nav-container">
+    <div class="wrap nav">
 
-        <a href="#home" class="logo">
-            <span class="logo-bracket">&lt;</span>
-            Think<span>More</span>
-            <b>/DevOps</b>
-            <span class="logo-bracket">/&gt;</span>
+        <a href="#home" class="brand">
+            🚀 <span>Campus to Corporate</span>
         </a>
 
-        <nav class="nav" id="nav">
-
-            <a href="#home">Home</a>
-            <a href="#why">Why DevOps?</a>
-            <a href="#curriculum">Curriculum</a>
-            <a href="#architecture">Architecture</a>
-            <a href="#journey">Journey</a>
-            <a href="#contact">Contact</a>
-
-        </nav>
-
-        <a class="nav-button" href="https://wa.me/918096239849" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-            Join Batch
-        </a>
-
-        <button class="menu-button" id="menuButton">
-            <i class="fa-solid fa-bars"></i>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+            ☰
         </button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#challenges">Challenges</a>
+            <a href="#learning">What You'll Learn</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#details">Course Details</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
     </div>
 
 </header>
 
 
-<!-- HERO -->
-<section class="hero" id="home">
+<!-- ================= HERO ================= -->
 
-    <div class="container hero-grid">
+<main>
+
+<section id="home" class="hero">
+
+    <div class="wrap hero-grid">
 
         <div class="hero-content">
 
-            <div class="status-pill">
-                <span class="pulse"></span>
-                BATCH 01 • STARTS OCT 1, 2026
+            <div class="eyebrow">
+                🚀 DEVOPS ESSENTIALS FOR BEGINNERS
             </div>
 
             <h1>
                 Don't Just Learn DevOps.
-                <span>Learn How Software Companies Work.</span>
+                <span>Learn How Software Companies Actually Work.</span>
             </h1>
 
-            <p class="hero-description">
-                A practical foundation program designed for
-                <strong>Engineering Students & Freshers</strong>
-                who want to understand how real applications are
-                developed, built, configured and deployed.
+            <p class="hero-text">
+                Practical, beginner-friendly DevOps training designed
+                for <strong>Engineering Students & Freshers</strong>.
+                Understand technologies, application architecture
+                and real-world deployment practices.
             </p>
 
             <div class="hero-buttons">
 
-                <a href="#curriculum" class="primary-button">
-                    Explore Course
-                    <i class="fa-solid fa-arrow-right"></i>
+                <a href="#contact" class="btn btn-main">
+                    🚀 Join Batch 1
                 </a>
 
-                <a href="https://wa.me/918096239849" target="_blank"
-                   class="secondary-button">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Talk on WhatsApp
+                <a href="#learning" class="btn btn-alt">
+                    📚 View Curriculum
                 </a>
 
             </div>
 
             <div class="hero-note">
-                <i class="fa-solid fa-circle-check"></i>
-                Learning by Doing • Beginner Friendly • Online
+                Learn → Practice → Build → Deploy → Grow
             </div>
 
         </div>
 
 
-        <!-- TERMINAL -->
-        <div class="terminal-wrapper">
+        <!-- COURSE CARD -->
 
-            <div class="terminal-glow"></div>
+        <div class="hero-card">
 
-            <div class="terminal">
-
-                <div class="terminal-header">
-
-                    <div class="terminal-dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <div class="terminal-title">
-                        student@corporate:~
-                    </div>
-
-                    <div class="terminal-icon">
-                        <i class="fa-solid fa-terminal"></i>
-                    </div>
-
-                </div>
-
-                <div class="terminal-body">
-
-                    <div>
-                        <span class="terminal-green">$</span>
-                        <span class="command">git clone campus-project</span>
-                    </div>
-
-                    <div class="terminal-output">
-                        ✓ Repository cloned successfully
-                    </div>
-
-                    <div>
-                        <span class="terminal-green">$</span>
-                        <span class="command">jenkins build</span>
-                    </div>
-
-                    <div class="terminal-output">
-                        ✓ Build completed successfully
-                    </div>
-
-                    <div>
-                        <span class="terminal-green">$</span>
-                        <span class="command">ansible-playbook deploy.yml</span>
-                    </div>
-
-                    <div class="terminal-output">
-                        ✓ Server configured
-                    </div>
-
-                    <div class="terminal-output">
-                        ✓ Application deployed
-                    </div>
-
-                    <br>
-
-                    <div class="terminal-success">
-                        <span>STATUS:</span> READY FOR CORPORATE 🚀
-                    </div>
-
-                    <div class="terminal-cursor">
-                        _
-                    </div>
-
-                </div>
-
+            <div class="card-top">
+                <span>🎓 BATCH 1</span>
+                <span class="live">● ENROLLING</span>
             </div>
-
-            <div class="floating-card card-one">
-                <i class="fa-solid fa-server"></i>
-                <div>
-                    <strong>Real Servers</strong>
-                    <small>Hands-on Practice</small>
-                </div>
-            </div>
-
-            <div class="floating-card card-two">
-                <i class="fa-solid fa-code-branch"></i>
-                <div>
-                    <strong>CI/CD</strong>
-                    <small>Understand the Flow</small>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- STATS -->
-<section class="stats-section">
-
-    <div class="container stats-grid">
-
-        <div class="stat">
-            <strong>35</strong>
-            <span>Days</span>
-        </div>
-
-        <div class="stat">
-            <strong>₹2,000</strong>
-            <span>Course Fee</span>
-        </div>
-
-        <div class="stat">
-            <strong>8–9 PM</strong>
-            <span>Daily Session</span>
-        </div>
-
-        <div class="stat">
-            <strong>100%</strong>
-            <span>Online</span>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- WHY -->
-<section class="section" id="why">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="eyebrow">THE REAL PROBLEM</span>
 
             <h2>
-                Engineering gives you theory.
-                <span>Industry expects execution.</span>
+                DevOps Essentials
+                <br>
+                for Beginners
             </h2>
 
             <p>
-                Many students complete their degree but still struggle
-                to understand what actually happens inside a software company.
+                For Engineering Students & Freshers
+            </p>
+
+            <div class="hero-stats">
+
+                <div>
+                    <strong>35</strong>
+                    <small>Days</small>
+                </div>
+
+                <div>
+                    <strong>₹2K</strong>
+                    <small>Fee</small>
+                </div>
+
+                <div>
+                    <strong>8–9</strong>
+                    <small>PM</small>
+                </div>
+
+            </div>
+
+            <div class="start-date">
+                📅 Starts <strong>October 1, 2026</strong>
+            </div>
+
+            <a href="#contact" class="card-btn">
+                Secure Your Seat →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CHALLENGES ================= -->
+
+<section id="challenges" class="section challenges">
+
+    <div class="wrap">
+
+        <div class="section-heading">
+
+            <div class="section-tag">THE PROBLEM</div>
+
+            <h2>
+                Are You Facing These Challenges?
+            </h2>
+
+            <p>
+                Engineering education gives you the foundation.
+                But entering the corporate world requires practical understanding.
             </p>
 
         </div>
 
 
-        <div class="problem-grid">
+        <div class="challenge-grid">
 
-            <div class="problem-card">
-                <div class="problem-number">01</div>
-                <i class="fa-solid fa-book-open"></i>
+            <article class="challenge-card pink">
+                <div class="challenge-icon">📚</div>
                 <h3>Theory → Practical Gap</h3>
                 <p>
-                    You know concepts but don't know how they are
-                    used in real software environments.
+                    You know concepts, but struggle to apply
+                    them in practical environments.
                 </p>
-            </div>
+            </article>
 
-            <div class="problem-card">
-                <div class="problem-number">02</div>
-                <i class="fa-solid fa-diagram-project"></i>
+
+            <article class="challenge-card orange">
+                <div class="challenge-icon">🧩</div>
                 <h3>Projects Without Fundamentals</h3>
                 <p>
-                    Building projects without understanding
-                    servers, builds, deployment and environments.
+                    Working on projects without understanding
+                    technologies and application architecture.
                 </p>
-            </div>
+            </article>
 
-            <div class="problem-card">
-                <div class="problem-number">03</div>
-                <i class="fa-solid fa-comments"></i>
+
+            <article class="challenge-card violet">
+                <div class="challenge-icon">💬</div>
                 <h3>Interview Knowledge Gap</h3>
                 <p>
-                    Difficulty explaining how applications move
-                    from source code to production.
+                    Finding it difficult to answer practical
+                    and technical interview questions.
                 </p>
-            </div>
+            </article>
 
-            <div class="problem-card">
-                <div class="problem-number">04</div>
-                <i class="fa-solid fa-building"></i>
+
+            <article class="challenge-card teal">
+                <div class="challenge-icon">🏢</div>
                 <h3>Corporate Training Challenges</h3>
                 <p>
-                    New employees often struggle to understand
-                    unfamiliar tools and environments.
+                    Struggling to understand technologies
+                    during initial job training.
                 </p>
-            </div>
+            </article>
+
+
+            <article class="challenge-card blue">
+                <div class="challenge-icon">🔄</div>
+                <h3>Project & KT Challenges</h3>
+                <p>
+                    Finding it difficult to understand
+                    projects, technologies and KT sessions.
+                </p>
+            </article>
 
         </div>
 
@@ -308,76 +228,61 @@
 </section>
 
 
-<!-- LEARNING FLOW -->
-<section class="learning-section">
+<!-- ================= SOLUTION ================= -->
 
-    <div class="container">
+<section class="solution">
 
-        <div class="section-heading center">
+    <div class="wrap solution-inner">
 
-            <span class="eyebrow">OUR APPROACH</span>
-
-            <h2>
-                Learn it.
-                <span>Do it.</span>
-            </h2>
-
-            <p>
-                We focus on understanding the complete journey,
-                not memorizing tool definitions.
-            </p>
-
+        <div class="section-tag light">
+            OUR APPROACH
         </div>
 
+        <h2>
+            🌉 Bridge the Gap Through
+            <span>Learning by Doing</span>
+        </h2>
 
-        <div class="flow">
+        <p>
+            We don't want you to simply memorize commands.
+            We want you to understand how technologies work together
+            in a real application environment.
+        </p>
+
+
+        <div class="learning-flow">
 
             <div class="flow-item">
-                <div class="flow-icon">
-                    <i class="fa-solid fa-book"></i>
-                </div>
+                <span>01</span>
                 <strong>Learn</strong>
-                <small>Understand</small>
             </div>
 
-            <div class="flow-line"></div>
+            <div class="flow-arrow">→</div>
 
             <div class="flow-item">
-                <div class="flow-icon">
-                    <i class="fa-solid fa-terminal"></i>
-                </div>
+                <span>02</span>
                 <strong>Practice</strong>
-                <small>Execute</small>
             </div>
 
-            <div class="flow-line"></div>
+            <div class="flow-arrow">→</div>
 
             <div class="flow-item">
-                <div class="flow-icon">
-                    <i class="fa-solid fa-hammer"></i>
-                </div>
+                <span>03</span>
                 <strong>Build</strong>
-                <small>Create</small>
             </div>
 
-            <div class="flow-line"></div>
+            <div class="flow-arrow">→</div>
 
             <div class="flow-item">
-                <div class="flow-icon">
-                    <i class="fa-solid fa-rocket"></i>
-                </div>
+                <span>04</span>
                 <strong>Deploy</strong>
-                <small>Release</small>
             </div>
 
-            <div class="flow-line"></div>
+            <div class="flow-arrow">→</div>
 
             <div class="flow-item">
-                <div class="flow-icon">
-                    <i class="fa-solid fa-arrow-trend-up"></i>
-                </div>
+                <span>05</span>
                 <strong>Grow</strong>
-                <small>Improve</small>
             </div>
 
         </div>
@@ -387,116 +292,129 @@
 </section>
 
 
-<!-- CURRICULUM -->
-<section class="section curriculum-section" id="curriculum">
+<!-- ================= LEARNING ================= -->
 
-    <div class="container">
+<section id="learning" class="section learning">
+
+    <div class="wrap">
 
         <div class="section-heading">
 
-            <span class="eyebrow">WHAT YOU WILL LEARN</span>
+            <div class="section-tag">
+                CURRICULUM
+            </div>
 
             <h2>
-                Your journey from
-                <span>code to deployment.</span>
+                📚 What You'll Learn
             </h2>
 
             <p>
-                Learn the essential technologies used around
-                enterprise application environments.
+                Learn the essential technologies and concepts
+                used in application development and DevOps environments.
             </p>
 
         </div>
 
 
-        <div class="curriculum-grid">
+        <div class="learning-grid">
 
-            <div class="course-card">
-                <span class="course-number">01</span>
-                <div class="course-icon linux">
-                    <i class="fa-brands fa-linux"></i>
-                </div>
+            <article class="learning-card">
+                <span class="number">01</span>
+                <div class="tech-icon">🐧</div>
                 <h3>Linux Fundamentals</h3>
-                <p>Commands, files, permissions, processes, services and server basics.</p>
-                <span class="tag">FOUNDATION</span>
-            </div>
+                <p>
+                    Commands, users, permissions, processes,
+                    services and basic administration.
+                </p>
+            </article>
 
 
-            <div class="course-card">
-                <span class="course-number">02</span>
-                <div class="course-icon git">
-                    <i class="fa-brands fa-git-alt"></i>
-                </div>
+            <article class="learning-card">
+                <span class="number">02</span>
+                <div class="tech-icon">🔀</div>
                 <h3>Git & GitHub</h3>
-                <p>Repositories, commits, branches, collaboration and source control.</p>
-                <span class="tag">VERSION CONTROL</span>
-            </div>
+                <p>
+                    Version control, repositories,
+                    branches and collaborative development.
+                </p>
+            </article>
 
 
-            <div class="course-card">
-                <span class="course-number">03</span>
-                <div class="course-icon jenkins">
-                    <i class="fa-solid fa-gears"></i>
-                </div>
+            <article class="learning-card">
+                <span class="number">03</span>
+                <div class="tech-icon">🔨</div>
                 <h3>Jenkins</h3>
-                <p>Understand automated builds and how CI fits into development.</p>
-                <span class="tag">AUTOMATION</span>
-            </div>
+                <p>
+                    Understand automation and
+                    Continuous Integration concepts.
+                </p>
+            </article>
 
 
-            <div class="course-card">
-                <span class="course-number">04</span>
-                <div class="course-icon ansible">
-                    <i class="fa-solid fa-server"></i>
-                </div>
+            <article class="learning-card">
+                <span class="number">04</span>
+                <div class="tech-icon">⚙️</div>
                 <h3>Ansible</h3>
-                <p>Configuration management and automated server setup.</p>
-                <span class="tag">CONFIGURATION</span>
-            </div>
+                <p>
+                    Learn configuration management
+                    and automation fundamentals.
+                </p>
+            </article>
 
 
-            <div class="course-card">
-                <span class="course-number">05</span>
-                <div class="course-icon apache">
-                    <i class="fa-solid fa-globe"></i>
-                </div>
-                <h3>Apache Web Server</h3>
-                <p>Web server concepts, configuration and application routing.</p>
-                <span class="tag">WEB SERVER</span>
-            </div>
+            <article class="learning-card">
+                <span class="number">05</span>
+                <div class="tech-icon">🌐</div>
+                <h3>Apache</h3>
+                <p>
+                    Understand web servers and
+                    their role in application architecture.
+                </p>
+            </article>
 
 
-            <div class="course-card">
-                <span class="course-number">06</span>
-                <div class="course-icon jboss">
-                    <i class="fa-solid fa-cube"></i>
-                </div>
+            <article class="learning-card">
+                <span class="number">06</span>
+                <div class="tech-icon">⚡</div>
                 <h3>JBoss / WildFly</h3>
-                <p>Application servers, deployments, ports and enterprise applications.</p>
-                <span class="tag">APP SERVER</span>
-            </div>
+                <p>
+                    Understand application servers
+                    and basic application deployment.
+                </p>
+            </article>
 
 
-            <div class="course-card">
-                <span class="course-number">07</span>
-                <div class="course-icon architecture">
-                    <i class="fa-solid fa-sitemap"></i>
-                </div>
+            <article class="learning-card featured">
+                <span class="number">07</span>
+                <div class="tech-icon">🏗️</div>
                 <h3>Application Architecture</h3>
-                <p>Understand how users, servers and applications connect together.</p>
-                <span class="tag">ARCHITECTURE</span>
-            </div>
+                <p>
+                    Understand DNS, firewall, load balancing,
+                    web server, application server and database.
+                </p>
+            </article>
 
 
-            <div class="course-card featured-course">
-                <span class="course-number">08</span>
-                <div class="course-icon cicd">
-                    <i class="fa-solid fa-infinity"></i>
-                </div>
-                <h3>CI/CD & Deployment</h3>
-                <p>Connect the complete workflow from source code to application deployment.</p>
-                <span class="tag">DEVOPS FLOW</span>
-            </div>
+            <article class="learning-card">
+                <span class="number">08</span>
+                <div class="tech-icon">🔄</div>
+                <h3>CI/CD</h3>
+                <p>
+                    Understand Continuous Integration,
+                    Continuous Delivery and deployment flow.
+                </p>
+            </article>
+
+
+            <article class="learning-card">
+                <span class="number">09</span>
+                <div class="tech-icon">🚀</div>
+                <h3>Basic Application Deployment</h3>
+                <p>
+                    Understand how an application moves
+                    from development to deployment.
+                </p>
+            </article>
 
         </div>
 
@@ -505,115 +423,113 @@
 </section>
 
 
-<!-- ARCHITECTURE -->
-<section class="architecture-section" id="architecture">
+<!-- ================= ARCHITECTURE ================= -->
 
-    <div class="container">
+<section id="architecture" class="architecture">
 
-        <div class="section-heading center">
+    <div class="wrap">
 
-            <span class="eyebrow">UNDERSTAND THE BIG PICTURE</span>
+        <div class="section-heading">
+
+            <div class="section-tag">
+                REAL-WORLD UNDERSTANDING
+            </div>
 
             <h2>
-                How does a real application
-                <span>reach the user?</span>
+                🏗️ Understand How a Real Application Works
             </h2>
 
             <p>
-                Don't just learn individual tools.
-                Understand how the pieces work together.
+                Don't just learn individual technologies.
+                Understand how they connect together in a real environment.
             </p>
 
         </div>
 
 
-        <div class="architecture">
+        <div class="architecture-box">
 
-            <div class="architecture-node">
-                <div class="architecture-icon">
-                    <i class="fa-solid fa-user"></i>
+            <div class="arch-row">
+
+                <div class="arch-node user">
+                    <span>👨‍💻</span>
+                    <strong>User</strong>
                 </div>
-                <strong>User</strong>
-                <small>Request</small>
+
             </div>
 
-            <div class="architecture-arrow">
-                <span></span>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
+            <div class="connector">↓</div>
 
-            <div class="architecture-node">
-                <div class="architecture-icon">
-                    <i class="fa-solid fa-globe"></i>
+            <div class="arch-row">
+
+                <div class="arch-node dns">
+                    <span>🌐</span>
+                    <strong>DNS</strong>
                 </div>
-                <strong>DNS</strong>
-                <small>Resolve</small>
-            </div>
 
-            <div class="architecture-arrow">
-                <span></span>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
-
-            <div class="architecture-node">
-                <div class="architecture-icon">
-                    <i class="fa-solid fa-shield-halved"></i>
+                <div class="arch-node firewall">
+                    <span>🛡️</span>
+                    <strong>Firewall</strong>
                 </div>
-                <strong>Firewall</strong>
-                <small>Protect</small>
+
             </div>
 
-            <div class="architecture-arrow">
-                <span></span>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
+            <div class="connector">↓</div>
 
-            <div class="architecture-node">
-                <div class="architecture-icon">
-                    <i class="fa-solid fa-scale-balanced"></i>
+            <div class="arch-row">
+
+                <div class="arch-node load">
+                    <span>⚖️</span>
+                    <strong>Load Balancer</strong>
                 </div>
-                <strong>Load Balancer</strong>
-                <small>Distribute</small>
+
             </div>
 
-            <div class="architecture-arrow">
-                <span></span>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
+            <div class="connector">↓</div>
 
-            <div class="architecture-node">
-                <div class="architecture-icon">
-                    <i class="fa-solid fa-server"></i>
+            <div class="server-group">
+
+                <div class="arch-node apache">
+                    <span>🌐</span>
+                    <strong>Apache</strong>
+                    <small>Web Server</small>
                 </div>
-                <strong>Apache</strong>
-                <small>Web Server</small>
-            </div>
 
-            <div class="architecture-arrow">
-                <span></span>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
-
-            <div class="architecture-node">
-                <div class="architecture-icon">
-                    <i class="fa-solid fa-cubes"></i>
+                <div class="arch-node apache">
+                    <span>🌐</span>
+                    <strong>Apache</strong>
+                    <small>Web Server</small>
                 </div>
-                <strong>JBoss</strong>
-                <small>Application</small>
+
             </div>
 
-            <div class="architecture-arrow">
-                <span></span>
-                <i class="fa-solid fa-chevron-right"></i>
+            <div class="connector">↓</div>
+
+            <div class="arch-node jboss">
+                <span>⚙️</span>
+                <strong>JBoss / WildFly</strong>
+                <small>Application Server</small>
             </div>
 
-            <div class="architecture-node">
-                <div class="architecture-icon">
-                    <i class="fa-solid fa-database"></i>
-                </div>
+            <div class="connector">↓</div>
+
+            <div class="arch-node database">
+                <span>🗄️</span>
                 <strong>Database</strong>
-                <small>Data</small>
             </div>
+
+        </div>
+
+
+        <div class="architecture-message">
+
+            <strong>
+                🎯 The goal is not just to know the tools.
+            </strong>
+
+            <span>
+                The goal is to understand how the pieces work together.
+            </span>
 
         </div>
 
@@ -622,63 +538,65 @@
 </section>
 
 
-<!-- JOURNEY -->
-<section class="section" id="journey">
+<!-- ================= PRACTICAL ================= -->
 
-    <div class="container">
+<section class="section practical">
+
+    <div class="wrap">
 
         <div class="section-heading">
 
-            <span class="eyebrow">PRACTICAL JOURNEY</span>
+            <div class="section-tag">
+                LEARNING BY DOING
+            </div>
 
             <h2>
-                From your first command
-                <span>to application deployment.</span>
+                🛠️ What Will You Actually Practice?
             </h2>
 
         </div>
 
 
-        <div class="journey">
+        <div class="practice-list">
 
-            <div class="journey-step">
-                <div class="journey-marker">01</div>
-                <div>
-                    <h3>Set up your Linux environment</h3>
-                    <p>Learn how servers are accessed and managed.</p>
-                </div>
+            <div class="practice-item">
+                <span>✓</span>
+                Set up and work with a Linux environment
             </div>
 
-            <div class="journey-step">
-                <div class="journey-marker">02</div>
-                <div>
-                    <h3>Work with Git & GitHub</h3>
-                    <p>Understand how source code is maintained.</p>
-                </div>
+            <div class="practice-item">
+                <span>✓</span>
+                Work with Git and GitHub repositories
             </div>
 
-            <div class="journey-step">
-                <div class="journey-marker">03</div>
-                <div>
-                    <h3>Build with Jenkins</h3>
-                    <p>See how automation can trigger application builds.</p>
-                </div>
+            <div class="practice-item">
+                <span>✓</span>
+                Understand Jenkins automation
             </div>
 
-            <div class="journey-step">
-                <div class="journey-marker">04</div>
-                <div>
-                    <h3>Configure servers using Ansible</h3>
-                    <p>Understand repeatable server configuration.</p>
-                </div>
+            <div class="practice-item">
+                <span>✓</span>
+                Automate tasks using Ansible
             </div>
 
-            <div class="journey-step">
-                <div class="journey-marker">05</div>
-                <div>
-                    <h3>Deploy an application</h3>
-                    <p>Connect the pieces and understand the deployment flow.</p>
-                </div>
+            <div class="practice-item">
+                <span>✓</span>
+                Understand Apache and JBoss/WildFly
+            </div>
+
+            <div class="practice-item">
+                <span>✓</span>
+                Understand application architecture
+            </div>
+
+            <div class="practice-item">
+                <span>✓</span>
+                Understand CI/CD workflow
+            </div>
+
+            <div class="practice-item">
+                <span>✓</span>
+                Understand basic application deployment
             </div>
 
         </div>
@@ -688,115 +606,110 @@
 </section>
 
 
-<!-- COURSE CTA -->
-<section class="course-cta" id="contact">
+<!-- ================= DETAILS ================= -->
 
-    <div class="container">
+<section id="details" class="details">
+
+    <div class="wrap">
+
+        <div class="section-heading">
+
+            <div class="section-tag">
+                COURSE INFORMATION
+            </div>
+
+            <h2>
+                🎯 Course Details
+            </h2>
+
+        </div>
+
+
+        <div class="details-grid">
+
+            <div class="detail">
+                <span>📅</span>
+                <small>Duration</small>
+                <strong>35 Days</strong>
+            </div>
+
+            <div class="detail">
+                <span>🎓</span>
+                <small>Batch</small>
+                <strong>Batch 1</strong>
+            </div>
+
+            <div class="detail">
+                <span>🚀</span>
+                <small>Starts</small>
+                <strong>Oct 1, 2026</strong>
+            </div>
+
+            <div class="detail">
+                <span>⏰</span>
+                <small>Timing</small>
+                <strong>8 PM – 9 PM</strong>
+            </div>
+
+            <div class="detail">
+                <span>💻</span>
+                <small>Mode</small>
+                <strong>Online</strong>
+            </div>
+
+            <div class="detail price">
+                <span>💰</span>
+                <small>Course Fee</small>
+                <strong>₹2,000</strong>
+            </div>
+
+        </div>
+
+
+        <div class="audience">
+            👨‍🎓 <strong>For Engineering Students & Freshers</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section id="contact" class="cta">
+
+    <div class="wrap">
 
         <div class="cta-box">
 
-            <div class="cta-content">
-
-                <span class="eyebrow">BATCH 01 • LIMITED START</span>
-
-                <h2>
-                    Ready to move from
-                    <span>Campus → Corporate?</span>
-                </h2>
-
-                <p>
-                    Start building the practical foundation
-                    that helps you understand real software environments.
-                </p>
-
-                <div class="cta-details">
-
-                    <div>
-                        <i class="fa-regular fa-calendar"></i>
-                        <span>
-                            <small>START DATE</small>
-                            Oct 1, 2026
-                        </span>
-                    </div>
-
-                    <div>
-                        <i class="fa-regular fa-clock"></i>
-                        <span>
-                            <small>TIME</small>
-                            8 PM – 9 PM
-                        </span>
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span>
-                            <small>FEE</small>
-                            ₹2,000
-                        </span>
-                    </div>
-
-                </div>
-
-                <a href="https://wa.me/918096239849"
-                   target="_blank"
-                   class="whatsapp-button">
-
-                    <i class="fa-brands fa-whatsapp"></i>
-
-                    Join / Enquire on WhatsApp
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </a>
-
+            <div class="section-tag light">
+                START YOUR JOURNEY
             </div>
 
+            <h2>
+                🚀 Ready to Bridge the Gap?
+            </h2>
 
-            <div class="cta-terminal">
+            <p>
+                Learn practical concepts. Understand real application environments.
+                Build the foundation you need for the corporate world.
+            </p>
 
-                <div class="mini-terminal">
-
-                    <div class="mini-top">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <div class="mini-body">
-
-                        <p>
-                            <b>$</b> whoami
-                        </p>
-
-                        <p class="green">
-                            engineering_student
-                        </p>
-
-                        <p>
-                            <b>$</b> goal
-                        </p>
-
-                        <p class="green">
-                            become_corporate_ready
-                        </p>
-
-                        <p>
-                            <b>$</b> start
-                        </p>
-
-                        <p class="green">
-                            think-more-devops 🚀
-                        </p>
-
-                        <p class="cursor-line">
-                            <b>$</b> _
-                        </p>
-
-                    </div>
-
-                </div>
-
+            <div class="cta-flow">
+                Learn → Practice → Build → Deploy → Grow
             </div>
+
+            <a href="https://wa.me/918096239849"
+               target="_blank"
+               rel="noopener"
+               class="btn whatsapp">
+                📲 WhatsApp to Join
+            </a>
+
+            <p class="phone">
+                WhatsApp: <strong>8096239849</strong>
+            </p>
 
         </div>
 
@@ -804,38 +717,32 @@
 
 </section>
 
+</main>
 
-<!-- FOOTER -->
+
+<!-- ================= FOOTER ================= -->
+
 <footer>
 
-    <div class="container footer-content">
+    <div class="wrap">
 
         <div class="footer-brand">
-
-            <div class="logo">
-                <span class="logo-bracket">&lt;</span>
-                Think<span>More</span>
-                <b>/DevOps</b>
-                <span class="logo-bracket">/&gt;</span>
-            </div>
-
-            <p>
-                Learn how software companies really work.
-            </p>
-
+            🚀 Campus to Corporate
         </div>
 
-        <div class="footer-right">
+        <p>
+            DevOps Essentials for Beginners
+        </p>
 
-            <p>
-                © 2026 Think More DevOps
-            </p>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#learning">Curriculum</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#contact">Contact</a>
+        </div>
 
-            <a href="https://wa.me/918096239849" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-                8096239849
-            </a>
-
+        <div class="copyright">
+            © 2026 Campus to Corporate. All Rights Reserved.
         </div>
 
     </div>
