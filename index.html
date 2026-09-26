@@ -1,7 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -66,9 +66,22 @@
             color: white;
 
             background:
-                radial-gradient(circle at 10% 20%, rgba(0, 224, 255, 0.25), transparent 30%),
-                radial-gradient(circle at 90% 10%, rgba(170, 70, 255, 0.25), transparent 30%),
-                linear-gradient(135deg, #101a3a, #18285b 55%, #32146b);
+                radial-gradient(
+                    circle at 10% 20%,
+                    rgba(0, 224, 255, 0.25),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 90% 10%,
+                    rgba(170, 70, 255, 0.25),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    135deg,
+                    #101a3a,
+                    #18285b 55%,
+                    #32146b
+                );
         }
 
         .hero::before {
@@ -96,7 +109,7 @@
         .hero-content {
             position: relative;
             z-index: 2;
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
         }
 
@@ -120,7 +133,13 @@
         }
 
         .hero h1 span {
-            background: linear-gradient(90deg, #57e8ff, #a879ff, #ff78c8);
+            background: linear-gradient(
+                90deg,
+                #57e8ff,
+                #a879ff,
+                #ff78c8
+            );
+
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -132,35 +151,67 @@
             margin-bottom: 30px;
         }
 
+        .hero-description {
+            max-width: 760px;
+            margin: auto;
+            color: #cbd5ef;
+            font-size: 16px;
+        }
+
+
+        /* =========================
+           COURSE INFO BOXES
+        ========================= */
+
         .hero-info {
             display: flex;
             justify-content: center;
+            align-items: stretch;
             flex-wrap: wrap;
             gap: 15px;
-            margin-top: 28px;
+            margin-top: 35px;
         }
 
         .info-pill {
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.18);
-            padding: 12px 20px;
-            border-radius: 12px;
-            backdrop-filter: blur(8px);
+            min-width: 165px;
+            padding: 15px 18px;
+
+            background: rgba(255,255,255,0.10);
+
+            border: 1px solid rgba(255,255,255,0.20);
+
+            border-radius: 14px;
+
+            backdrop-filter: blur(10px);
+
+            box-shadow:
+                0 8px 25px rgba(0,0,0,0.12);
+
+            transition: all .3s ease;
+        }
+
+        .info-pill:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.16);
+            border-color: rgba(255,255,255,0.35);
         }
 
         .info-pill strong {
             display: block;
             color: white;
             font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 3px;
         }
 
         .info-pill small {
             color: #c6d0ee;
+            font-size: 12px;
         }
 
 
         /* =========================
-           SECTION
+           GENERAL SECTION
         ========================= */
 
         section {
@@ -213,67 +264,114 @@
             background: white;
             border-radius: 22px;
             padding: 30px;
+
             border: 1px solid #e4e8f1;
-            box-shadow: 0 10px 30px rgba(31, 45, 75, .06);
+
+            box-shadow:
+                0 10px 30px rgba(31,45,75,.06);
+
             overflow: hidden;
+
             transition: .3s;
         }
 
         .course-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 20px 45px rgba(40, 50, 100, .12);
+
+            box-shadow:
+                0 20px 45px rgba(40,50,100,.12);
         }
 
         .course-card::before {
             content: "";
+
             position: absolute;
             top: 0;
             left: 0;
+
             width: 100%;
             height: 5px;
         }
 
         .course-card:nth-child(1)::before {
-            background: linear-gradient(90deg,#00a8ff,#006eff);
+            background: linear-gradient(
+                90deg,
+                #00a8ff,
+                #006eff
+            );
         }
 
         .course-card:nth-child(2)::before {
-            background: linear-gradient(90deg,#8b5cf6,#c026d3);
+            background: linear-gradient(
+                90deg,
+                #8b5cf6,
+                #c026d3
+            );
         }
 
         .course-card:nth-child(3)::before {
-            background: linear-gradient(90deg,#00c9a7,#00a878);
+            background: linear-gradient(
+                90deg,
+                #00c9a7,
+                #00a878
+            );
         }
 
         .course-card:nth-child(4)::before {
-            background: linear-gradient(90deg,#ff9f43,#ff6b35);
+            background: linear-gradient(
+                90deg,
+                #ff9f43,
+                #ff6b35
+            );
         }
 
         .course-card:nth-child(5)::before {
-            background: linear-gradient(90deg,#ec4899,#db2777);
+            background: linear-gradient(
+                90deg,
+                #ec4899,
+                #db2777
+            );
         }
 
         .course-card:nth-child(6)::before {
-            background: linear-gradient(90deg,#06b6d4,#0284c7);
+            background: linear-gradient(
+                90deg,
+                #06b6d4,
+                #0284c7
+            );
         }
 
         .course-card:nth-child(7)::before {
-            background: linear-gradient(90deg,#ef4444,#dc2626);
+            background: linear-gradient(
+                90deg,
+                #ef4444,
+                #dc2626
+            );
         }
 
         .course-card:nth-child(8)::before {
-            background: linear-gradient(90deg,#16a34a,#15803d);
+            background: linear-gradient(
+                90deg,
+                #16a34a,
+                #15803d
+            );
         }
 
         .course-number {
             width: 42px;
             height: 42px;
+
             display: grid;
             place-items: center;
+
             border-radius: 12px;
+
             background: #f0f2f8;
+
             color: #4f46e5;
+
             font-weight: 800;
+
             margin-bottom: 15px;
         }
 
@@ -289,23 +387,34 @@
 
         .course-card li {
             position: relative;
-            padding: 7px 0 7px 25px;
+
+            padding:
+                7px
+                0
+                7px
+                25px;
+
             color: #596579;
+
             font-size: 14.5px;
         }
 
         .course-card li::before {
             content: "✓";
+
             position: absolute;
+
             left: 0;
             top: 7px;
+
             color: #16a34a;
+
             font-weight: 800;
         }
 
 
         /* =========================
-           ARCHITECTURE VISUAL
+           APPLICATION ARCHITECTURE
         ========================= */
 
         .architecture-section {
@@ -313,11 +422,21 @@
         }
 
         .architecture {
-            background: linear-gradient(135deg,#111b3c,#1c2c5e);
+            background:
+                linear-gradient(
+                    135deg,
+                    #111b3c,
+                    #1c2c5e
+                );
+
             border-radius: 28px;
+
             padding: 45px 30px;
+
             color: white;
-            box-shadow: 0 20px 55px rgba(22,31,70,.18);
+
+            box-shadow:
+                0 20px 55px rgba(22,31,70,.18);
         }
 
         .architecture-title {
@@ -336,19 +455,29 @@
 
         .architecture-flow {
             display: flex;
+
             justify-content: center;
             align-items: center;
+
             flex-wrap: wrap;
+
             gap: 10px;
         }
 
         .arch-box {
             min-width: 125px;
+
             padding: 18px 15px;
+
             text-align: center;
+
             border-radius: 14px;
-            background: rgba(255,255,255,.09);
-            border: 1px solid rgba(255,255,255,.15);
+
+            background:
+                rgba(255,255,255,.09);
+
+            border:
+                1px solid rgba(255,255,255,.15);
         }
 
         .arch-box strong {
@@ -366,6 +495,12 @@
             font-weight: 800;
         }
 
+        .architecture-flow-note {
+            text-align: center;
+            margin-top: 28px;
+            color: #b9c7e9;
+        }
+
 
         /* =========================
            WHO SHOULD JOIN
@@ -373,17 +508,36 @@
 
         .audience {
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+
+            grid-template-columns:
+                repeat(3,1fr);
+
             gap: 20px;
         }
 
         .audience-card {
             padding: 30px;
+
             background: white;
+
             border-radius: 20px;
+
             text-align: center;
-            border: 1px solid #e7eaf1;
-            box-shadow: 0 8px 25px rgba(30,40,70,.06);
+
+            border:
+                1px solid #e7eaf1;
+
+            box-shadow:
+                0 8px 25px rgba(30,40,70,.06);
+
+            transition: .3s;
+        }
+
+        .audience-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 15px 35px rgba(30,40,70,.10);
         }
 
         .audience-icon {
@@ -407,38 +561,63 @@
 
         .cta {
             padding: 75px 20px;
+
             text-align: center;
+
             color: white;
 
             background:
-                radial-gradient(circle at 20% 20%, rgba(0,217,255,.2), transparent 30%),
-                linear-gradient(135deg,#171d45,#3c1d72);
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(0,217,255,.2),
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #171d45,
+                    #3c1d72
+                );
         }
 
         .cta h2 {
-            font-size: clamp(30px,4vw,46px);
+            font-size:
+                clamp(30px,4vw,46px);
+
             margin-bottom: 12px;
         }
 
         .cta p {
             color: #d5dcf5;
+
             max-width: 650px;
-            margin: 0 auto 25px;
+
+            margin:
+                0 auto 25px;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 14px 28px;
+
+            padding:
+                14px 28px;
+
             border-radius: 12px;
+
             background: white;
+
             color: #332078;
+
             font-weight: 800;
+
             transition: .25s;
         }
 
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0,0,0,.2);
+
+            box-shadow:
+                0 10px 25px rgba(0,0,0,.2);
         }
 
 
@@ -448,9 +627,13 @@
 
         footer {
             background: #0c1228;
+
             color: #9da8c4;
+
             text-align: center;
+
             padding: 25px 15px;
+
             font-size: 13px;
         }
 
@@ -475,10 +658,12 @@
 
         }
 
+
         @media(max-width:600px) {
 
             .hero {
-                padding: 65px 15px 70px;
+                padding:
+                    65px 15px 70px;
             }
 
             section {
@@ -490,7 +675,8 @@
             }
 
             .architecture {
-                padding: 30px 18px;
+                padding:
+                    30px 18px;
             }
 
             .architecture-flow {
@@ -498,62 +684,138 @@
             }
 
             .arrow {
-                transform: rotate(90deg);
+                transform:
+                    rotate(90deg);
+            }
+
+            .info-pill {
+                min-width: 145px;
+                flex: 1 1 140px;
             }
 
         }
 
     </style>
+
 </head>
 
 
 <body>
 
 
-<!-- =========================
+<!-- ==================================================
      HERO
-========================= -->
+================================================== -->
 
 <header class="hero">
 
     <div class="hero-content">
 
+
         <div class="badge">
             🚀 PRACTICAL DEVOPS FOUNDATION PROGRAM
         </div>
 
+
         <h1>
-            DevOps <span>Essentials</span><br>
+
+            DevOps
+            <span>Essentials</span>
+
+            <br>
+
             for Beginners
+
         </h1>
 
+
         <p class="hero-subtitle">
+
             For All Engineering Students & Freshers
+
         </p>
 
-        <p style="max-width:720px;margin:auto;color:#cbd5ef;">
-            Build a strong foundation in Linux, Application Architecture,
-            Git, GitHub, Apache, JBoss, CI/CD, Jenkins and Ansible —
-            and understand how these technologies fit together in real
-            software environments.
+
+        <p class="hero-description">
+
+            Build a strong foundation in Linux,
+            Application Architecture, Git, GitHub,
+            Apache, JBoss, CI/CD, Jenkins and Ansible —
+            and understand how these technologies
+            fit together in real software environments.
+
         </p>
+
+
+        <!-- COURSE INFORMATION BOXES -->
 
         <div class="hero-info">
 
-            <div class="info-pill">
-                <strong>30–35 Days</strong>
-                <small>Course Duration</small>
-            </div>
 
             <div class="info-pill">
-                <strong>8 Modules</strong>
-                <small>Core Topics</small>
+
+                <strong>
+                    30–35 Days
+                </strong>
+
+                <small>
+                    Course Duration
+                </small>
+
             </div>
 
+
             <div class="info-pill">
-                <strong>Beginner Friendly</strong>
-                <small>Start from Fundamentals</small>
+
+                <strong>
+                    8 Modules
+                </strong>
+
+                <small>
+                    Core Topics
+                </small>
+
             </div>
+
+
+            <div class="info-pill">
+
+                <strong>
+                    Beginner Friendly
+                </strong>
+
+                <small>
+                    Start from Fundamentals
+                </small>
+
+            </div>
+
+
+            <div class="info-pill">
+
+                <strong>
+                    ₹2,000
+                </strong>
+
+                <small>
+                    Course Fee
+                </small>
+
+            </div>
+
+
+            <div class="info-pill">
+
+                <strong>
+                    Online
+                </strong>
+
+                <small>
+                    8 PM – 9 PM
+                </small>
+
+            </div>
+
 
         </div>
 
@@ -562,24 +824,40 @@
 </header>
 
 
-<!-- =========================
+<!-- ==================================================
      COURSE CURRICULUM
-========================= -->
+================================================== -->
 
-<section class="curriculum" id="curriculum">
+<section
+    class="curriculum"
+    id="curriculum"
+>
+
 
     <div class="container">
 
+
         <div class="section-heading">
 
-            <div class="mini">Course Curriculum</div>
 
-            <h2>What You Will Learn</h2>
+            <div class="mini">
+                Course Curriculum
+            </div>
+
+
+            <h2>
+                What You Will Learn
+            </h2>
+
 
             <p>
-                A carefully structured foundation covering the essential
-                concepts used in modern software and DevOps environments.
+
+                A carefully structured foundation
+                covering the essential concepts used
+                in modern software and DevOps environments.
+
             </p>
+
 
         </div>
 
@@ -587,170 +865,427 @@
         <div class="course-grid">
 
 
-            <!-- 1 -->
+            <!-- ======================================
+                 MODULE 1
+            ======================================= -->
 
             <div class="course-card">
 
-                <div class="course-number">01</div>
 
-                <h3>🐧 Basic Linux</h3>
+                <div class="course-number">
+                    01
+                </div>
+
+
+                <h3>
+                    🐧 Basic Linux
+                </h3>
+
 
                 <ul>
-                    <li>Essential Linux commands</li>
-                    <li>File and directory management</li>
-                    <li>User and permission management</li>
-                    <li>Basic process and service management</li>
-                    <li>Working with Linux platforms</li>
+
+                    <li>
+                        Essential Linux commands
+                    </li>
+
+                    <li>
+                        File and directory management
+                    </li>
+
+                    <li>
+                        User and permission management
+                    </li>
+
+                    <li>
+                        Basic process and service management
+                    </li>
+
+                    <li>
+                        Working with Linux platforms
+                    </li>
+
                 </ul>
+
 
             </div>
 
 
-            <!-- 2 -->
+            <!-- ======================================
+                 MODULE 2
+            ======================================= -->
 
             <div class="course-card">
 
-                <div class="course-number">02</div>
 
-                <h3>🏗️ Application Architecture</h3>
+                <div class="course-number">
+                    02
+                </div>
+
+
+                <h3>
+                    🏗️ Application Architecture
+                </h3>
+
 
                 <ul>
-                    <li>Web Server</li>
-                    <li>Application Server</li>
-                    <li>Database</li>
-                    <li>Load Balancing</li>
-                    <li>High Availability</li>
-                    <li>Clustering</li>
-                    <li>DNS</li>
-                    <li>Virtual IP (VIP)</li>
-                    <li>Ports</li>
-                    <li>Proxy Server</li>
-                    <li>Firewall</li>
-                    <li>Disaster Recovery</li>
+
+                    <li>
+                        Web Server
+                    </li>
+
+                    <li>
+                        Application Server
+                    </li>
+
+                    <li>
+                        Database
+                    </li>
+
+                    <li>
+                        Load Balancing
+                    </li>
+
+                    <li>
+                        High Availability
+                    </li>
+
+                    <li>
+                        Clustering
+                    </li>
+
+                    <li>
+                        DNS
+                    </li>
+
+                    <li>
+                        Virtual IP (VIP)
+                    </li>
+
+                    <li>
+                        Ports
+                    </li>
+
+                    <li>
+                        Proxy Server
+                    </li>
+
+                    <li>
+                        Firewall
+                    </li>
+
+                    <li>
+                        Disaster Recovery
+                    </li>
+
                 </ul>
+
 
             </div>
 
 
-            <!-- 3 -->
+            <!-- ======================================
+                 MODULE 3
+            ======================================= -->
 
             <div class="course-card">
 
-                <div class="course-number">03</div>
 
-                <h3>🔀 Git & GitHub</h3>
+                <div class="course-number">
+                    03
+                </div>
+
+
+                <h3>
+                    🔀 Git & GitHub
+                </h3>
+
 
                 <ul>
-                    <li>Introduction to Git</li>
-                    <li>Git concepts and workflow</li>
-                    <li>Basic Git commands</li>
-                    <li>Git repositories</li>
-                    <li>Branching and merging</li>
-                    <li>GitHub basics</li>
-                    <li>Working with remote repositories</li>
+
+                    <li>
+                        Introduction to Git
+                    </li>
+
+                    <li>
+                        Git concepts and workflow
+                    </li>
+
+                    <li>
+                        Basic Git commands
+                    </li>
+
+                    <li>
+                        Git repositories
+                    </li>
+
+                    <li>
+                        Branching and merging
+                    </li>
+
+                    <li>
+                        GitHub basics
+                    </li>
+
+                    <li>
+                        Working with remote repositories
+                    </li>
+
                 </ul>
+
 
             </div>
 
 
-            <!-- 4 -->
+            <!-- ======================================
+                 MODULE 4
+            ======================================= -->
 
             <div class="course-card">
 
-                <div class="course-number">04</div>
 
-                <h3>🌐 Web Server – Apache</h3>
+                <div class="course-number">
+                    04
+                </div>
+
+
+                <h3>
+                    🌐 Web Server – Apache
+                </h3>
+
 
                 <ul>
-                    <li>Apache Web Server introduction</li>
-                    <li>Installation</li>
-                    <li>Configuration</li>
-                    <li>Virtual Hosts</li>
-                    <li>Ports and basic troubleshooting</li>
-                    <li>Starting, stopping and managing Apache services</li>
+
+                    <li>
+                        Apache Web Server introduction
+                    </li>
+
+                    <li>
+                        Installation
+                    </li>
+
+                    <li>
+                        Configuration
+                    </li>
+
+                    <li>
+                        Virtual Hosts
+                    </li>
+
+                    <li>
+                        Ports and basic troubleshooting
+                    </li>
+
+                    <li>
+                        Starting, stopping and managing Apache services
+                    </li>
+
                 </ul>
+
 
             </div>
 
 
-            <!-- 5 -->
+            <!-- ======================================
+                 MODULE 5
+            ======================================= -->
 
             <div class="course-card">
 
-                <div class="course-number">05</div>
 
-                <h3>⚙️ Application Server – JBoss</h3>
+                <div class="course-number">
+                    05
+                </div>
+
+
+                <h3>
+                    ⚙️ Application Server – JBoss
+                </h3>
+
 
                 <ul>
-                    <li>JBoss / WildFly introduction</li>
-                    <li>Installation</li>
-                    <li>Configuration</li>
-                    <li>Creating users</li>
-                    <li>Server and service management</li>
-                    <li>Application deployment</li>
-                    <li>Basic troubleshooting</li>
+
+                    <li>
+                        JBoss / WildFly introduction
+                    </li>
+
+                    <li>
+                        Installation
+                    </li>
+
+                    <li>
+                        Configuration
+                    </li>
+
+                    <li>
+                        Creating users
+                    </li>
+
+                    <li>
+                        Server and service management
+                    </li>
+
+                    <li>
+                        Application deployment
+                    </li>
+
+                    <li>
+                        Basic troubleshooting
+                    </li>
+
                 </ul>
+
 
             </div>
 
 
-            <!-- 6 -->
+            <!-- ======================================
+                 MODULE 6
+            ======================================= -->
 
             <div class="course-card">
 
-                <div class="course-number">06</div>
 
-                <h3>🔄 CI/CD Concepts</h3>
+                <div class="course-number">
+                    06
+                </div>
+
+
+                <h3>
+                    🔄 CI/CD Concepts
+                </h3>
+
 
                 <ul>
-                    <li>Introduction to CI/CD</li>
-                    <li>Continuous Integration</li>
-                    <li>Continuous Delivery</li>
-                    <li>Continuous Deployment</li>
-                    <li>CI/CD workflow</li>
-                    <li>Understanding the role of automation in software delivery</li>
+
+                    <li>
+                        Introduction to CI/CD
+                    </li>
+
+                    <li>
+                        Continuous Integration
+                    </li>
+
+                    <li>
+                        Continuous Delivery
+                    </li>
+
+                    <li>
+                        Continuous Deployment
+                    </li>
+
+                    <li>
+                        CI/CD workflow
+                    </li>
+
+                    <li>
+                        Understanding the role of automation
+                        in software delivery
+                    </li>
+
                 </ul>
+
 
             </div>
 
 
-            <!-- 7 -->
+            <!-- ======================================
+                 MODULE 7
+            ======================================= -->
 
             <div class="course-card">
 
-                <div class="course-number">07</div>
 
-                <h3>🔧 Jenkins</h3>
+                <div class="course-number">
+                    07
+                </div>
+
+
+                <h3>
+                    🔧 Jenkins
+                </h3>
+
 
                 <ul>
-                    <li>Jenkins introduction</li>
-                    <li>Installation and configuration</li>
-                    <li>Jenkins architecture</li>
-                    <li>Jobs and builds</li>
-                    <li>Basic pipeline concepts</li>
-                    <li>Build and deployment workflow</li>
+
+                    <li>
+                        Jenkins introduction
+                    </li>
+
+                    <li>
+                        Installation and configuration
+                    </li>
+
+                    <li>
+                        Jenkins architecture
+                    </li>
+
+                    <li>
+                        Jobs and builds
+                    </li>
+
+                    <li>
+                        Basic pipeline concepts
+                    </li>
+
+                    <li>
+                        Build and deployment workflow
+                    </li>
+
                 </ul>
+
 
             </div>
 
 
-            <!-- 8 -->
+            <!-- ======================================
+                 MODULE 8
+            ======================================= -->
 
             <div class="course-card">
 
-                <div class="course-number">08</div>
 
-                <h3>🤖 Ansible</h3>
+                <div class="course-number">
+                    08
+                </div>
+
+
+                <h3>
+                    🤖 Ansible
+                </h3>
+
 
                 <ul>
-                    <li>Ansible introduction</li>
-                    <li>Installation and configuration</li>
-                    <li>Ansible architecture</li>
-                    <li>Inventory</li>
-                    <li>Ad-hoc commands</li>
-                    <li>Playbooks</li>
-                    <li>Basic automation concepts</li>
+
+                    <li>
+                        Ansible introduction
+                    </li>
+
+                    <li>
+                        Installation and configuration
+                    </li>
+
+                    <li>
+                        Ansible architecture
+                    </li>
+
+                    <li>
+                        Inventory
+                    </li>
+
+                    <li>
+                        Ad-hoc commands
+                    </li>
+
+                    <li>
+                        Playbooks
+                    </li>
+
+                    <li>
+                        Basic automation concepts
+                    </li>
+
                 </ul>
+
 
             </div>
 
@@ -762,62 +1297,118 @@
 </section>
 
 
-<!-- =========================
+<!-- ==================================================
      APPLICATION ARCHITECTURE
-========================= -->
+================================================== -->
 
 <section class="architecture-section">
 
+
     <div class="container">
+
 
         <div class="architecture">
 
+
             <div class="architecture-title">
 
-                <h3>Understand the Complete Application Architecture</h3>
+
+                <h3>
+                    Understand the Complete
+                    Application Architecture
+                </h3>
+
 
                 <p>
-                    Learn how the major components connect in a typical
-                    application environment.
+
+                    Learn how the major components
+                    connect in a typical application environment.
+
                 </p>
+
 
             </div>
 
 
             <div class="architecture-flow">
 
-                <div class="arch-box">
-                    <strong>👨‍💻 User</strong>
-                    <small>Browser</small>
-                </div>
-
-                <div class="arrow">→</div>
 
                 <div class="arch-box">
-                    <strong>🌐 Web Server</strong>
-                    <small>Apache</small>
+
+                    <strong>
+                        👨‍💻 User
+                    </strong>
+
+                    <small>
+                        Browser
+                    </small>
+
                 </div>
 
-                <div class="arrow">→</div>
+
+                <div class="arrow">
+                    →
+                </div>
+
 
                 <div class="arch-box">
-                    <strong>⚙️ App Server</strong>
-                    <small>JBoss</small>
+
+                    <strong>
+                        🌐 Web Server
+                    </strong>
+
+                    <small>
+                        Apache
+                    </small>
+
                 </div>
 
-                <div class="arrow">→</div>
+
+                <div class="arrow">
+                    →
+                </div>
+
 
                 <div class="arch-box">
-                    <strong>🗄️ Database</strong>
-                    <small>Application Data</small>
+
+                    <strong>
+                        ⚙️ App Server
+                    </strong>
+
+                    <small>
+                        JBoss
+                    </small>
+
                 </div>
+
+
+                <div class="arrow">
+                    →
+                </div>
+
+
+                <div class="arch-box">
+
+                    <strong>
+                        🗄️ Database
+                    </strong>
+
+                    <small>
+                        Application Data
+                    </small>
+
+                </div>
+
 
             </div>
 
 
-            <div style="text-align:center;margin-top:28px;color:#b9c7e9;">
+            <div class="architecture-flow-note">
+
                 Git → Jenkins → CI/CD → Ansible → Deployment
+
             </div>
+
 
         </div>
 
@@ -826,70 +1417,123 @@
 </section>
 
 
-<!-- =========================
-     WHO SHOULD JOIN
-========================= -->
+<!-- ==================================================
+     WHO CAN JOIN
+================================================== -->
 
 <section>
 
+
     <div class="container">
+
 
         <div class="section-heading">
 
-            <div class="mini">Who Can Join?</div>
 
-            <h2>Designed for Beginners</h2>
+            <div class="mini">
+                Who Can Join?
+            </div>
+
+
+            <h2>
+                Designed for Beginners
+            </h2>
+
 
             <p>
-                No advanced DevOps experience is required to start building
-                your foundation.
+
+                No advanced DevOps experience is required
+                to start building your foundation.
+
             </p>
+
 
         </div>
 
 
         <div class="audience">
 
+
+            <!-- Engineering Students -->
+
             <div class="audience-card">
 
-                <div class="audience-icon">🎓</div>
 
-                <h3>Engineering Students</h3>
+                <div class="audience-icon">
+                    🎓
+                </div>
+
+
+                <h3>
+                    Engineering Students
+                </h3>
+
 
                 <p>
-                    Students who want to understand how software applications
-                    are built, deployed and managed.
+
+                    Students who want to understand
+                    how software applications are built,
+                    deployed and managed.
+
                 </p>
+
 
             </div>
 
 
+            <!-- Freshers -->
+
             <div class="audience-card">
 
-                <div class="audience-icon">🚀</div>
 
-                <h3>Freshers</h3>
+                <div class="audience-icon">
+                    🚀
+                </div>
+
+
+                <h3>
+                    Freshers
+                </h3>
+
 
                 <p>
-                    Graduates preparing for entry-level software,
-                    infrastructure and DevOps-related roles.
+
+                    Graduates preparing for entry-level
+                    software, infrastructure and
+                    DevOps-related roles.
+
                 </p>
+
 
             </div>
 
 
+            <!-- Beginners -->
+
             <div class="audience-card">
 
-                <div class="audience-icon">💡</div>
 
-                <h3>Beginners</h3>
+                <div class="audience-icon">
+                    💡
+                </div>
+
+
+                <h3>
+                    Beginners
+                </h3>
+
 
                 <p>
-                    Anyone looking to build a structured foundation in
-                    Linux, servers, CI/CD and automation.
+
+                    Anyone looking to build a structured
+                    foundation in Linux, servers,
+                    CI/CD and automation.
+
                 </p>
 
+
             </div>
+
 
         </div>
 
@@ -898,39 +1542,63 @@
 </section>
 
 
-<!-- =========================
+<!-- ==================================================
      CALL TO ACTION
-========================= -->
+================================================== -->
 
 <section class="cta">
 
-    <h2>Ready to Build Your DevOps Foundation?</h2>
+
+    <h2>
+        Ready to Build Your DevOps Foundation?
+    </h2>
+
 
     <p>
-        Start with the fundamentals, understand the complete application
-        environment and gradually move toward CI/CD and automation.
+
+        Start with the fundamentals, understand
+        the complete application environment
+        and gradually move toward CI/CD and automation.
+
     </p>
 
-    <a href="#curriculum" class="cta-button">
+
+    <a
+        href="#curriculum"
+        class="cta-button"
+    >
+
         Explore Course Curriculum ↓
+
     </a>
+
 
 </section>
 
 
-<!-- =========================
+<!-- ==================================================
      FOOTER
-========================= -->
+================================================== -->
 
 <footer>
 
+
     <p>
-        © 2026 <strong>Campus to Corporate</strong>
+
+        © 2026
+        <strong>
+            Campus to Corporate
+        </strong>
+
     </p>
 
+
     <p style="margin-top:5px;">
+
         DevOps Essentials for Beginners
+
     </p>
+
 
 </footer>
 
