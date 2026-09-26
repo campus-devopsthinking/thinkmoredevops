@@ -8,7 +8,7 @@
     <title>DevOps Essentials for Beginners | Campus to Corporate</title>
 
     <meta name="description"
-          content="DevOps Essentials for Beginners - 30–35 day practical training for Engineering Students and Freshers. Learn Linux, Application Architecture, Git, GitHub, Apache, JBoss, CI/CD, Jenkins and Ansible.">
+          content="DevOps Essentials for Beginners - 30–35 day training for Engineering Students and Freshers. Learn Linux, Application Architecture, Git, GitHub, Apache, JBoss, CI/CD, Jenkins and Ansible.">
 
     <meta name="keywords"
           content="DevOps course, DevOps training, DevOps for beginners, Linux, Git, GitHub, Jenkins, Ansible, Apache, JBoss, CI/CD, Engineering students, Freshers">
@@ -191,70 +191,6 @@
             color: #667085;
             max-width: 720px;
             margin: auto;
-        }
-
-
-        /* =========================
-           COURSE FLOW
-        ========================= */
-
-        .flow {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
-        }
-
-        .flow-card {
-            background: white;
-            padding: 25px;
-            border-radius: 18px;
-            box-shadow: 0 10px 30px rgba(30, 45, 80, .07);
-            border: 1px solid #e8ebf3;
-            text-align: center;
-            transition: .3s;
-        }
-
-        .flow-card:hover {
-            transform: translateY(-7px);
-            box-shadow: 0 18px 40px rgba(50, 65, 120, .12);
-        }
-
-        .flow-icon {
-            width: 58px;
-            height: 58px;
-            display: grid;
-            place-items: center;
-            margin: 0 auto 15px;
-            border-radius: 16px;
-            color: white;
-            font-size: 25px;
-            font-weight: 800;
-        }
-
-        .flow-card:nth-child(1) .flow-icon {
-            background: linear-gradient(135deg,#00a8ff,#006eff);
-        }
-
-        .flow-card:nth-child(2) .flow-icon {
-            background: linear-gradient(135deg,#8b5cf6,#6336e8);
-        }
-
-        .flow-card:nth-child(3) .flow-icon {
-            background: linear-gradient(135deg,#00c9a7,#00a878);
-        }
-
-        .flow-card:nth-child(4) .flow-icon {
-            background: linear-gradient(135deg,#ff9f43,#ff6b35);
-        }
-
-        .flow-card h3 {
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-
-        .flow-card p {
-            color: #70798c;
-            font-size: 14px;
         }
 
 
@@ -466,47 +402,6 @@
 
 
         /* =========================
-           WHY THIS COURSE
-        ========================= */
-
-        .benefits {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 18px;
-        }
-
-        .benefit {
-            display: flex;
-            gap: 16px;
-            align-items: flex-start;
-            background: white;
-            padding: 23px;
-            border-radius: 17px;
-            border: 1px solid #e6eaf2;
-        }
-
-        .benefit-icon {
-            min-width: 42px;
-            height: 42px;
-            display: grid;
-            place-items: center;
-            border-radius: 12px;
-            background: #eef0ff;
-            color: #5b50e6;
-            font-weight: 800;
-        }
-
-        .benefit h4 {
-            margin-bottom: 4px;
-        }
-
-        .benefit p {
-            color: #697386;
-            font-size: 14px;
-        }
-
-
-        /* =========================
            CTA
         ========================= */
 
@@ -570,19 +465,11 @@
 
         @media(max-width:900px) {
 
-            .flow {
-                grid-template-columns: repeat(2,1fr);
-            }
-
             .course-grid {
                 grid-template-columns: 1fr;
             }
 
             .audience {
-                grid-template-columns: 1fr;
-            }
-
-            .benefits {
                 grid-template-columns: 1fr;
             }
 
@@ -596,10 +483,6 @@
 
             section {
                 padding: 55px 0;
-            }
-
-            .flow {
-                grid-template-columns: 1fr;
             }
 
             .course-card {
@@ -680,65 +563,10 @@
 
 
 <!-- =========================
-     COURSE JOURNEY
+     COURSE CURRICULUM
 ========================= -->
 
-<section>
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div class="mini">Learning Journey</div>
-
-            <h2>From Linux to Automation</h2>
-
-            <p>
-                Follow a structured learning path designed to connect
-                individual technologies into one complete DevOps picture.
-            </p>
-
-        </div>
-
-
-        <div class="flow">
-
-            <div class="flow-card">
-                <div class="flow-icon">01</div>
-                <h3>Foundation</h3>
-                <p>Linux & Application Architecture</p>
-            </div>
-
-            <div class="flow-card">
-                <div class="flow-icon">02</div>
-                <h3>Source Control</h3>
-                <p>Git & GitHub</p>
-            </div>
-
-            <div class="flow-card">
-                <div class="flow-icon">03</div>
-                <h3>Servers</h3>
-                <p>Apache & JBoss</p>
-            </div>
-
-            <div class="flow-card">
-                <div class="flow-icon">04</div>
-                <h3>Automation</h3>
-                <p>CI/CD, Jenkins & Ansible</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     CURRICULUM
-========================= -->
-
-<section class="curriculum">
+<section class="curriculum" id="curriculum">
 
     <div class="container">
 
@@ -880,7 +708,7 @@
                     <li>Continuous Delivery</li>
                     <li>Continuous Deployment</li>
                     <li>CI/CD workflow</li>
-                    <li>Role of automation in software delivery</li>
+                    <li>Understanding the role of automation in software delivery</li>
                 </ul>
 
             </div>
@@ -935,7 +763,7 @@
 
 
 <!-- =========================
-     ARCHITECTURE
+     APPLICATION ARCHITECTURE
 ========================= -->
 
 <section class="architecture-section">
@@ -946,7 +774,7 @@
 
             <div class="architecture-title">
 
-                <h3>Understand the Complete Picture</h3>
+                <h3>Understand the Complete Application Architecture</h3>
 
                 <p>
                     Learn how the major components connect in a typical
@@ -1071,122 +899,7 @@
 
 
 <!-- =========================
-     BENEFITS
-========================= -->
-
-<section style="background:#eef2f9;">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div class="mini">Learning Focus</div>
-
-            <h2>What You Will Understand</h2>
-
-        </div>
-
-
-        <div class="benefits">
-
-            <div class="benefit">
-
-                <div class="benefit-icon">01</div>
-
-                <div>
-                    <h4>Linux Foundation</h4>
-                    <p>
-                        Understand the basic commands and administration
-                        concepts used while working on Linux platforms.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <div class="benefit-icon">02</div>
-
-                <div>
-                    <h4>Application Architecture</h4>
-                    <p>
-                        Understand how web servers, application servers,
-                        databases and network components work together.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <div class="benefit-icon">03</div>
-
-                <div>
-                    <h4>Source Code Management</h4>
-                    <p>
-                        Learn the fundamentals of Git and GitHub and how
-                        developers collaborate using repositories.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <div class="benefit-icon">04</div>
-
-                <div>
-                    <h4>Servers & Deployment</h4>
-                    <p>
-                        Understand Apache and JBoss installation,
-                        configuration and application deployment.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <div class="benefit-icon">05</div>
-
-                <div>
-                    <h4>CI/CD</h4>
-                    <p>
-                        Understand how source code moves through build,
-                        integration and deployment stages.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <div class="benefit-icon">06</div>
-
-                <div>
-                    <h4>Automation</h4>
-                    <p>
-                        Learn the fundamentals of Jenkins and Ansible
-                        and their role in DevOps automation.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     CTA
+     CALL TO ACTION
 ========================= -->
 
 <section class="cta">
